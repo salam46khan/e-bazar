@@ -1,69 +1,39 @@
-# React + TypeScript + Vite
+# 🛒 E-Bazar – Online Shopping Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-Bazar is a full-stack **e-commerce Single Page Application (SPA)** built with **React.js**, **TypeScript**, **Redux Toolkit**, **Express.js**, **MongoDB**, and **Mongoose**.  
+It allows users to browse products, view details, add items to a cart, and simulate a checkout process.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+🔗 **Live Website:** [e-bazar](https://e-bazar-app.vercel.app)  
+🔗 **Server github link:** [server github link](https://github.com/salam46khan/e-bazar-server)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+_(Update the links when deployed)_
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🚀 Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🏠 Responsive Home Page with product list
+- 🔍 Product Detail Page with detailed product info
+- 🛒 Add to Cart, Cart Sidebar with quantity controls
+- 💳 Checkout Modal with user form
+- ⚙️ Backend API with Express.js & MongoDB (Mongoose)
+- 🌐 State management with Redux Toolkit & RTK Query
+- 🎨 Clean UI with Tailwind CSS
+- 🔐 Fully typed with TypeScript
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🔧 Tech Stack
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Frontend               | Backend                 | Database | Others                            |
+|------------------------|-------------------------|----------|------------------------------------|
+| React.js + TypeScript  | Node.js + Express.js    | MongoDB  | Tailwind CSS, Redux Toolkit, RTK Query |
+| React Router           | Mongoose ORM            |          | dotenv, cors, nodemon             |
+
+---
+
+## 📂 Folder Structure (MVC + Redux)
